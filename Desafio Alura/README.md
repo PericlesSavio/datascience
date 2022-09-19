@@ -11,8 +11,8 @@ Por fim, você vai utilizar o GitHub e desenvolver um portfólio focado em Data 
 Link do repositório: [https://github.com/Mirlaa/Challenge-Data-Science-1ed](https://github.com/Mirlaa/Challenge-Data-Science-1ed)
 
 ### Notebooks:
-[Semana 1](https://github.com/PericlesSavio/Jupyter_Notebook/blob/main/Desafio%20Alura/semana_1.ipynb)
-[Semana 2](https://github.com/PericlesSavio/Jupyter_Notebook/blob/main/Desafio%20Alura/semana_2.ipynb)
+- [Semana 1](https://github.com/PericlesSavio/Jupyter_Notebook/blob/main/Desafio%20Alura/semana_1.ipynb)
+- [Semana 2](https://github.com/PericlesSavio/Jupyter_Notebook/blob/main/Desafio%20Alura/semana_2.ipynb)
 
 ### Atividades (Semana 1)
 - [ ] Instalar MySQL Workbench e importar **database dump**.
