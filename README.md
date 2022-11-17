@@ -5,4 +5,6 @@
  - [Desafio Alura Ciência de Dados (Inadimplência em liberação de créditos) - SQL/Python/Machine Learning](https://github.com/PericlesSavio/Jupyter_Notebook/tree/main/Desafio%20Alura)
 
 ### Machine Learning
-- [Agrupamento Hierárquico - Notas](MBA em Data Science e Analytics/Agrupamento Hierárquico/Notas.ipynb)
+##### Agrupamento Hierárquico
+- [Notas/Vestibular](MBA%20em%20Data%20Science%20e%20Analytics/Agrupamento%20Hier%C3%A1rquico/Notas.ipynb)
+- [Países](MBA%20em%20Data%20Science%20e%20Analytics/Agrupamento%20Hier%C3%A1rquico/Países.ipynb)
