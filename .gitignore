@@ -1,2 +1,4 @@
 _dsa_env
 .vscode
+.ipynb_checkpoints
+.outros
