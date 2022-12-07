@@ -19,3 +19,5 @@ Website: https://periclessavio.github.io/
 ##### Múltiplos
  - [Iris dataset](Outros/iris_dataset.ipynb)
  - [Desafio Alura Ciência de Dados (Inadimplência em liberação de créditos)](https://github.com/PericlesSavio/Jupyter_Notebook/tree/main/Desafio%20Alura)
+    - [Semana 1](Desafio%20Alura/semana_1.ipynb)
+    - [Semana 2](Desafio%20Alura/semana_2.ipynb)
