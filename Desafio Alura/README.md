@@ -32,72 +32,74 @@ Link do repositório: [https://github.com/Mirlaa/Challenge-Data-Science-1ed](htt
 
 Uma das atividade é traduzir os dados. Com auxílio do dicionário de dados **[https://github.com/Mirlaa/Challenge-Data-Science-1ed/tree/main/Dados](https://github.com/Mirlaa/Challenge-Data-Science-1ed/tree/main/Dados)** os dados foram traduzidos utilizando o código abaixo.
 
-    -- aluracash.dados_mutuarios
+``` sql
+-- aluracash.dados_mutuarios
 
-    ALTER TABLE aluracash.dados_mutuarios
-    RENAME COLUMN person_id TO PESSOA,
-    RENAME COLUMN person_age TO IDADE,
-    RENAME COLUMN person_income TO RENDIMENTO_ANUAL,
-    RENAME COLUMN person_home_ownership TO SITUACAO_PROPRIEDADE,
-    RENAME COLUMN person_emp_length TO ANOS_TRABALHADOS;
+ALTER TABLE aluracash.dados_mutuarios
+RENAME COLUMN person_id TO PESSOA,
+RENAME COLUMN person_age TO IDADE,
+RENAME COLUMN person_income TO RENDIMENTO_ANUAL,
+RENAME COLUMN person_home_ownership TO SITUACAO_PROPRIEDADE,
+RENAME COLUMN person_emp_length TO ANOS_TRABALHADOS;
 
-    ALTER TABLE aluracash.dados_mutuarios
-    MODIFY COLUMN SITUACAO_PROPRIEDADE VARCHAR(10); -- Error Code: 1406. Data too long for column 'SITUACAO_PROPRIEDADE' at row 4. A palavra 'Hipotecada' tem 10 caracteres.
+ALTER TABLE aluracash.dados_mutuarios
+MODIFY COLUMN SITUACAO_PROPRIEDADE VARCHAR(10); -- Error Code: 1406. Data too long for column 'SITUACAO_PROPRIEDADE' at row 4. A palavra 'Hipotecada' tem 10 caracteres.
 
-    SET SQL_SAFE_UPDATES = 0; -- Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.  To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+SET SQL_SAFE_UPDATES = 0; -- Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.  To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
 
-    UPDATE aluracash.dados_mutuarios
-    SET SITUACAO_PROPRIEDADE  =
-        CASE
-            WHEN SITUACAO_PROPRIEDADE = 'Rent' THEN 'Alugada'
-            WHEN SITUACAO_PROPRIEDADE = 'Own' THEN 'Própria'
-            WHEN SITUACAO_PROPRIEDADE = 'Mortgage' THEN 'Hipotecada'
-            WHEN SITUACAO_PROPRIEDADE = 'Other' THEN 'Outros'
-        END;
-
-
-    -- aluracash.emprestimos
-
-    ALTER TABLE aluracash.emprestimos
-    RENAME COLUMN loan_id TO EMPRESTIMO,
-    RENAME COLUMN loan_intent TO MOTIVO_EMPRESTIMO,
-    RENAME COLUMN loan_grade TO PONTUACAO,
-    RENAME COLUMN loan_amnt TO VALOR_EMPRESTIMO,
-    RENAME COLUMN loan_int_rate TO JUROS,
-    RENAME COLUMN loan_status TO POSSIB_INADIMPLENCIA,
-    RENAME COLUMN loan_percent_income TO EMPRESTIMO_PERC_RENDA_ANUAL;
-
-    ALTER TABLE aluracash.emprestimos
-    MODIFY COLUMN MOTIVO_EMPRESTIMO VARCHAR(20); -- Error Code: 1406.
-
-    UPDATE aluracash.emprestimos
-    SET MOTIVO_EMPRESTIMO  =
+UPDATE aluracash.dados_mutuarios
+SET SITUACAO_PROPRIEDADE  =
     CASE
-        WHEN MOTIVO_EMPRESTIMO = 'Homeimprovement' THEN 'Melhora do lar'
-        WHEN MOTIVO_EMPRESTIMO = 'Venture'    THEN 'Empreendimento'
-        WHEN MOTIVO_EMPRESTIMO = 'Personal'THEN 'Pessoal'
-        WHEN MOTIVO_EMPRESTIMO = 'Medical'THEN 'Médico'
-        WHEN MOTIVO_EMPRESTIMO = 'Education'THEN'Educativo'
-        WHEN MOTIVO_EMPRESTIMO = 'Debtconsolidation'THEN 'Pagamento de débitos'
+        WHEN SITUACAO_PROPRIEDADE = 'Rent' THEN 'Alugada'
+        WHEN SITUACAO_PROPRIEDADE = 'Own' THEN 'Própria'
+        WHEN SITUACAO_PROPRIEDADE = 'Mortgage' THEN 'Hipotecada'
+        WHEN SITUACAO_PROPRIEDADE = 'Other' THEN 'Outros'
     END;
 
 
-    -- aluracash.historicos_banco
+-- aluracash.emprestimos
 
-    ALTER TABLE aluracash.historicos_banco
-    RENAME COLUMN cb_id TO SOLICITACAO,
-    RENAME COLUMN cb_person_default_on_file TO INADIMPLENTE,
-    RENAME COLUMN cb_person_cred_hist_length TO ANOS_PRIMEIRO_CREDITO;
+ALTER TABLE aluracash.emprestimos
+RENAME COLUMN loan_id TO EMPRESTIMO,
+RENAME COLUMN loan_intent TO MOTIVO_EMPRESTIMO,
+RENAME COLUMN loan_grade TO PONTUACAO,
+RENAME COLUMN loan_amnt TO VALOR_EMPRESTIMO,
+RENAME COLUMN loan_int_rate TO JUROS,
+RENAME COLUMN loan_status TO POSSIB_INADIMPLENCIA,
+RENAME COLUMN loan_percent_income TO EMPRESTIMO_PERC_RENDA_ANUAL;
 
-    UPDATE aluracash.historicos_banco
-    SET INADIMPLENTE  =
-    CASE
-        WHEN INADIMPLENTE = 'N' THEN 0
-        WHEN INADIMPLENTE = 'Y' THEN 1
-    END;
+ALTER TABLE aluracash.emprestimos
+MODIFY COLUMN MOTIVO_EMPRESTIMO VARCHAR(20); -- Error Code: 1406.
 
-    ALTER TABLE aluracash.historicos_banco
-    MODIFY COLUMN INADIMPLENTE INT; -- Adequar o tipo do dado (de VARCHAR(1) para INT)
+UPDATE aluracash.emprestimos
+SET MOTIVO_EMPRESTIMO  =
+CASE
+    WHEN MOTIVO_EMPRESTIMO = 'Homeimprovement' THEN 'Melhora do lar'
+    WHEN MOTIVO_EMPRESTIMO = 'Venture'    THEN 'Empreendimento'
+    WHEN MOTIVO_EMPRESTIMO = 'Personal'THEN 'Pessoal'
+    WHEN MOTIVO_EMPRESTIMO = 'Medical'THEN 'Médico'
+    WHEN MOTIVO_EMPRESTIMO = 'Education'THEN'Educativo'
+    WHEN MOTIVO_EMPRESTIMO = 'Debtconsolidation'THEN 'Pagamento de débitos'
+END;
+
+
+-- aluracash.historicos_banco
+
+ALTER TABLE aluracash.historicos_banco
+RENAME COLUMN cb_id TO SOLICITACAO,
+RENAME COLUMN cb_person_default_on_file TO INADIMPLENTE,
+RENAME COLUMN cb_person_cred_hist_length TO ANOS_PRIMEIRO_CREDITO;
+
+UPDATE aluracash.historicos_banco
+SET INADIMPLENTE  =
+CASE
+    WHEN INADIMPLENTE = 'N' THEN 0
+    WHEN INADIMPLENTE = 'Y' THEN 1
+END;
+
+ALTER TABLE aluracash.historicos_banco
+MODIFY COLUMN INADIMPLENTE INT; -- Adequar o tipo do dado (de VARCHAR(1) para INT)
+```
 - [x] Traduzir as colunas.
 
 #### Analisar quais os tipos de dados
@@ -124,13 +126,16 @@ A tabela **id** possui IDs para relacionamento com outras tabelas.
 
 Para verificar valores vazio ou nulos:
 
+
 SELECT nome_coluna FROM nome_tabela
 WHERE nome_coluna IS NULL OR nome_coluna = ''
 
-Exemplo:
 
-    SELECT * FROM aluracash.emprestimos
-    WHERE JUROS IS NULL OR JUROS = ''
+Exemplo:
+``` sql
+SELECT * FROM aluracash.emprestimos
+WHERE JUROS IS NULL OR JUROS = ''
+```
 
 A tabela **id** é única que não apresenta valores nulos, vazios nem duplicados.
 - [x] Verificar quais são as inconsistências nos dados.
@@ -141,14 +146,16 @@ Para agilizar o processo, estas duas estapas foram feitas juntas.
 
 Para juntar as tabelas foi utilizado **INNER JOIN**, os dados das tabelas que não se ralacionam com a tabela **id** foram desconsiderados.
 
-    SELECT PESSOA, IDADE, RENDIMENTO_ANUAL, SITUACAO_PROPRIEDADE, ANOS_TRABALHADOS, EMPRESTIMO, MOTIVO_EMPRESTIMO, PONTUACAO, VALOR_EMPRESTIMO, JUROS, POSSIB_INADIMPLENCIA, EMPRESTIMO_PERC_RENDA_ANUAL, SOLICITACAO, INADIMPLENTE, ANOS_PRIMEIRO_CREDITO
-    FROM id
-    INNER JOIN dados_mutuarios
-    on id.person_id = dados_mutuarios.PESSOA
-    INNER JOIN emprestimos
-    on id.loan_id = emprestimos.EMPRESTIMO
-    INNER JOIN historicos_banco
-    on id.cb_id = historicos_banco.SOLICITACAO
+```sql
+SELECT PESSOA, IDADE, RENDIMENTO_ANUAL, SITUACAO_PROPRIEDADE, ANOS_TRABALHADOS, EMPRESTIMO, MOTIVO_EMPRESTIMO, PONTUACAO, VALOR_EMPRESTIMO, JUROS, POSSIB_INADIMPLENCIA, EMPRESTIMO_PERC_RENDA_ANUAL, SOLICITACAO, INADIMPLENTE, ANOS_PRIMEIRO_CREDITO
+FROM id
+INNER JOIN dados_mutuarios
+on id.person_id = dados_mutuarios.PESSOA
+INNER JOIN emprestimos
+on id.loan_id = emprestimos.EMPRESTIMO
+INNER JOIN historicos_banco
+on id.cb_id = historicos_banco.SOLICITACAO
+```
 
 O resultado é uma tabela com 15 colunas e 14.952 linhas.
 - [x] Unir as tabelas de dados de acordo com os IDs.
@@ -157,15 +164,17 @@ O resultado é uma tabela com 15 colunas e 14.952 linhas.
 
 Foram encontradas linhas com o id **PESSOA** vazios, essas linhas foram removidas.
 
-    SELECT PESSOA, IDADE, RENDIMENTO_ANUAL, SITUACAO_PROPRIEDADE, ANOS_TRABALHADOS, EMPRESTIMO, MOTIVO_EMPRESTIMO, PONTUACAO, VALOR_EMPRESTIMO, JUROS, POSSIB_INADIMPLENCIA, EMPRESTIMO_PERC_RENDA_ANUAL, SOLICITACAO, INADIMPLENTE, ANOS_PRIMEIRO_CREDITO
-    FROM id
-    INNER JOIN dados_mutuarios
-    on id.person_id = dados_mutuarios.PESSOA
-    INNER JOIN emprestimos
-    on id.loan_id = emprestimos.EMPRESTIMO
-    INNER JOIN historicos_banco
-    on id.cb_id = historicos_banco.SOLICITACAO
-    AND PESSOA != ''
+```sql
+SELECT PESSOA, IDADE, RENDIMENTO_ANUAL, SITUACAO_PROPRIEDADE, ANOS_TRABALHADOS, EMPRESTIMO, MOTIVO_EMPRESTIMO, PONTUACAO, VALOR_EMPRESTIMO, JUROS, POSSIB_INADIMPLENCIA, EMPRESTIMO_PERC_RENDA_ANUAL, SOLICITACAO, INADIMPLENTE, ANOS_PRIMEIRO_CREDITO
+FROM id
+INNER JOIN dados_mutuarios
+on id.person_id = dados_mutuarios.PESSOA
+INNER JOIN emprestimos
+on id.loan_id = emprestimos.EMPRESTIMO
+INNER JOIN historicos_banco
+on id.cb_id = historicos_banco.SOLICITACAO
+AND PESSOA != ''
+```
 
 O resultado é uma tabela com 15 colunas e 34.485 linhas.
 - [x] Corrigir as inconsistências nos dados.
@@ -175,34 +184,36 @@ O resultado é uma tabela com 15 colunas e 34.485 linhas.
 Para exportar foi utilizado o Python.
 Link do Jupyter Notebook: [semana_1.ipynb](https://github.com/PericlesSavio/Alura_Challenge_Data_Science-2022/blob/master/semana_1.ipynb)
 
-    # bibliotecas usadas:
-    import mysql.connector as sql # fazer a conexão com o MySQL
-    import pandas as pd # manipulação dos dados
+```python
+# bibliotecas usadas:
+import mysql.connector as sql # fazer a conexão com o MySQL
+import pandas as pd # manipulação dos dados
 
-    # opcional (ocutar alguns alertas)
-    import warnings
-    warnings.filterwarnings('ignore')
+# opcional (ocutar alguns alertas)
+import warnings
+warnings.filterwarnings('ignore')
 
-    # conexão
-    db_connection = sql.connect(host='127.0.0.1', database='aluracash', user='root', password='senha123')
+# conexão
+db_connection = sql.connect(host='127.0.0.1', database='aluracash', user='root', password='senha123')
 
-    # testar conexao
-    pd.read_sql('SELECT * FROM id', con=db_connection)
+# testar conexao
+pd.read_sql('SELECT * FROM id', con=db_connection)
 
-    # query unindo todas as tabelas
-    tabela_aluracash = pd.read_sql(
-    """SELECT PESSOA, IDADE, RENDIMENTO_ANUAL, SITUACAO_PROPRIEDADE, ANOS_TRABALHADOS, EMPRESTIMO, MOTIVO_EMPRESTIMO, PONTUACAO, VALOR_EMPRESTIMO, JUROS, POSSIB_INADIMPLENCIA, EMPRESTIMO_PERC_RENDA_ANUAL, SOLICITACAO, INADIMPLENTE, ANOS_PRIMEIRO_CREDITO
-    FROM id
-    INNER JOIN dados_mutuarios
-    on id.person_id = dados_mutuarios.PESSOA
-    INNER JOIN emprestimos
-    on id.loan_id = emprestimos.EMPRESTIMO
-    INNER JOIN historicos_banco
-    on id.cb_id = historicos_banco.SOLICITACAO
-    AND PESSOA != ''""", con=db_connection)
+# query unindo todas as tabelas
+tabela_aluracash = pd.read_sql(
+"""SELECT PESSOA, IDADE, RENDIMENTO_ANUAL, SITUACAO_PROPRIEDADE, ANOS_TRABALHADOS, EMPRESTIMO, MOTIVO_EMPRESTIMO, PONTUACAO, VALOR_EMPRESTIMO, JUROS, POSSIB_INADIMPLENCIA, EMPRESTIMO_PERC_RENDA_ANUAL, SOLICITACAO, INADIMPLENTE, ANOS_PRIMEIRO_CREDITO
+FROM id
+INNER JOIN dados_mutuarios
+on id.person_id = dados_mutuarios.PESSOA
+INNER JOIN emprestimos
+on id.loan_id = emprestimos.EMPRESTIMO
+INNER JOIN historicos_banco
+on id.cb_id = historicos_banco.SOLICITACAO
+AND PESSOA != ''""", con=db_connection)
 
-    # exportar para formato CSV
-    tabela_aluracash.to_csv(('tabela_aluracash.csv'), sep=';', index=False)
+# exportar para formato CSV
+tabela_aluracash.to_csv(('tabela_aluracash.csv'), sep=';', index=False)
+```
 - [x] Exportar a tabela de dados unidos como csv.
 
 ### Atividades (Semana 1)
