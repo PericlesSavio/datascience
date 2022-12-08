@@ -105,11 +105,12 @@ MODIFY COLUMN INADIMPLENTE INT; -- Adequar o tipo do dado (de VARCHAR(1) para IN
 #### Analisar quais os tipos de dados
 
 Executar uma liha de cada vez:
-
-    SHOW COLUMNS FROM id;
-    SHOW COLUMNS FROM dados_mutuarios;
-    SHOW COLUMNS FROM emprestimos;
-    SHOW COLUMNS FROM historicos_banco;
+```sql
+SHOW COLUMNS FROM id;
+SHOW COLUMNS FROM dados_mutuarios;
+SHOW COLUMNS FROM emprestimos;
+SHOW COLUMNS FROM historicos_banco;
+```
 
 As tabelas possuem dados do tipo **INT**, **FLOAT** e **VARCHAR**.
 - [x] Analisar quais os tipos de dados.
