@@ -62,3 +62,7 @@ import pandas as pd # manipulação de dataframes
 
 >https://programmathically.com/principal-components-analysis-explained-for-dummies/
 
+>https://www.ibm.com/docs/pt-br/spss-statistics/29.0.0?topic=detection-kmo-bartletts-test
+
+>https://medium.com/@felipeverasaraujo/abrindo-a-caixa-preta-pca-an%C3%A1lise-de-componentes-principais-d5d400781dfe
+
