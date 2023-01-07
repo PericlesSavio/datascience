@@ -66,3 +66,6 @@ import pandas as pd # manipulação de dataframes
 
 >https://medium.com/@felipeverasaraujo/abrindo-a-caixa-preta-pca-an%C3%A1lise-de-componentes-principais-d5d400781dfe
 
+>https://rstudio-pubs-static.s3.amazonaws.com/72772_9e20e1d9d3624aa08a498cd62f78cdca.html
+
+>https://willstenico.medium.com/puffindex-criando-um-ranking-de-a%C3%A7%C3%B5es-brasileiras-utilizando-pca-analise-de-componentes-2715f2ffc46a
