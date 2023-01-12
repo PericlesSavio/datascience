@@ -26,7 +26,7 @@ Website: https://periclessavio.github.io/
 
 
 #### Regressão Logística
-- [Cancer de Mama](MBA%20em%20Data%20Science%20e%20Analytics/Regressão%20Logísticacancer_mama.ipynb)
+- [Cancer de Mama](MBA%20em%20Data%20Science%20e%20Analytics/Regressão%20Logística/cancer_mama.ipynb)
 
 
 ##### Múltiplos
