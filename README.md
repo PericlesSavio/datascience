@@ -23,6 +23,7 @@ Website: https://periclessavio.github.io/
 
 ##### [PCA](MBA%20em%20Data%20Science%20e%20Analytics/PCA/README.md)
 - [Notas](MBA%20em%20Data%20Science%20e%20Analytics/PCA/notas.ipynb)
+- [Reconhecimento de Dígitos](MBA%20em%20Data%20Science%20e%20Analytics/PCA/digitos.ipynb)
 
 
 #### Regressão Logística

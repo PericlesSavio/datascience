@@ -1,7 +1,5 @@
 ## Análise de Componentes Principais (PCA ou Principal Component Analysis)
 
-## WIP
-
 A análise de componentes principais (PCA) é uma técnica para reduzir a dimensionalidade de tais conjuntos de dados, aumentando a interpretabilidade, mas ao mesmo tempo minimizando a perda de informações. Ela faz isso criando novas variáveis não correlacionadas que maximizam sucessivamente a variância. 
 
 PCA lida lida com variáveis **métricas** que possuem, entre si, consideráveis valores de correlação, a fim de se estabelecer nova(s) variável(is) que capture(m) o comportamento conjunto das variáveis originais. Essas variáveis têm o nome de **Fator**.
@@ -19,7 +17,7 @@ PCA lida lida com variáveis **métricas** que possuem, entre si, consideráveis
 * Elaborar rankings sem a utilização da ponderação arbitrária.
 
 
-#### Bibliotecas mais utilizadas
+#### Algumas bibliotecas
 
 ```python
 # teste de Bartlett
@@ -62,6 +60,8 @@ from factor_analyzer import FactorAnalyzer
 
 ![](kmo.png)
 
+
+
 #### Referências
 
 - https://royalsocietypublishing.org/doi/10.1098/rsta.2015.0202
@@ -75,8 +75,6 @@ from factor_analyzer import FactorAnalyzer
 - https://repositorio.enap.gov.br/bitstream/1/4790/1/Livro%20An%C3%A1lise%20Fatorial.pdf
 
 - https://edisciplinas.usp.br/pluginfile.php/3381454/mod_resource/content/1/Resumo_PCA_FA.pdf
-
-- https://programmathically.com/principal-components-analysis-explained-for-dummies/
 
 - https://www.ibm.com/docs/pt-br/spss-statistics/29.0.0?topic=detection-kmo-bartletts-test
 
