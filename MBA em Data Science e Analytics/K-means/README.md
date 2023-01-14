@@ -23,6 +23,18 @@ Em geral, clustering usa técnicas iterativas para agrupar casos de um conjunto 
 - Variáveis categóricas e não categóricas
 - O mecanismo de clusterização se baseia na diminuição das distâncias das observações de um cluster e seu centroide.
 
+#### Algumas bibliotecas
+
+```python
+# normalizar os dados
+from sklearn.preprocessing import StandardScaler
+
+# modelo
+from sklearn.cluster import KMeans
+
+# análise de variância (ANOVA)
+import statsmodels.api as sm
+```
 
 ### Referências
  - https://learn.microsoft.com/pt-br/azure/machine-learning/component-reference/k-means-clustering
