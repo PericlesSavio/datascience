@@ -1,10 +1,11 @@
-### Péricles S. G. Marques
+# Péricles S. G. Marques
 
 Linkedin: https://www.linkedin.com/in/periclessavio/
 
 Website: https://periclessavio.github.io/
 
-
+### Estatística
+- [Conceitos Básicos](Estatística/variancia_desvio_padrao.md)
 
 ### Machine Learning
 
