@@ -9,6 +9,8 @@ A **Variância** e o **Desvio Padrão** são ambos utilizados para medir a dispe
 
 
 ###### Referências
+- https://pt.wikipedia.org/wiki/Desvio_padr%C3%A3o
+- https://pt.wikipedia.org/wiki/Vari%C3%A2ncia
 - https://brasilescola.uol.com.br/matematica/medidas-dispersao-variancia-desvio-padrao.htm
 - https://www.mathsisfun.com/data/standard-deviation.html
 - https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-sample/v/population-variance-and-sample-variance

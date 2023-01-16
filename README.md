@@ -1,8 +1,6 @@
 # Péricles S. G. Marques
-
-Linkedin: https://www.linkedin.com/in/periclessavio/
-
-Website: https://periclessavio.github.io/
+- Linkedin: [linkedin.com/in/periclessavio](https://www.linkedin.com/in/periclessavio/)
+- Website: [periclessavio.github.io](https://periclessavio.github.io/)
 
 ### Estatística
 - [Conceitos Básicos](Estatística/variancia_desvio_padrao.md)
