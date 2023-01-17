@@ -3,7 +3,7 @@
 - Website: [periclessavio.github.io](https://periclessavio.github.io/)
 
 ### Estatística
-- [Conceitos Básicos](Estatística/variancia_desvio_padrao.md)
+- [Variância e desvio padrão](Estatística/variancia_desvio_padrao.md)
 
 ### Machine Learning
 
@@ -12,24 +12,24 @@
 
 
 ##### Agrupamento Hierárquico
-- [Notas](MBA%20em%20Data%20Science%20e%20Analytics/Agrupamento%20Hier%C3%A1rquico/notas_alunos.ipynb)
-- [Indicadores socioeconômicos das nações](MBA%20em%20Data%20Science%20e%20Analytics/Agrupamento%20Hier%C3%A1rquico/indicadores_socioeconomicos_paises.ipynb)
+- [Notas](Machine%20Learning/Agrupamento%20Hier%C3%A1rquico/notas_alunos.ipynb)
+- [Indicadores socioeconômicos das nações](Machine%20Learning/Agrupamento%20Hier%C3%A1rquico/indicadores_socioeconomicos_paises.ipynb)
 
 
-##### [K-means](MBA%20em%20Data%20Science%20e%20Analytics/K-means/README.md)
-- [Clientes de uma operadora de cartão de crédito](MBA%20em%20Data%20Science%20e%20Analytics/K-means/cartao_de_credito.ipynb)
+##### [K-means](Machine%20Learning/K-means/README.md)
+- [Clientes de uma operadora de cartão de crédito](Machine%20Learning/K-means/cartao_de_credito.ipynb)
 
 
-##### [PCA](MBA%20em%20Data%20Science%20e%20Analytics/PCA/README.md)
-- [Notas](MBA%20em%20Data%20Science%20e%20Analytics/PCA/notas.ipynb)
-- [Reconhecimento de Dígitos](MBA%20em%20Data%20Science%20e%20Analytics/PCA/digitos.ipynb)
+##### [PCA](Machine%20Learning/PCA/README.md)
+- [Notas](Machine%20Learning/PCA/notas.ipynb)
+- [Reconhecimento de dígitos](Machine%20Learning/PCA/digitos.ipynb)
 
 
-#### Regressão Logística
-- [Cancer de Mama](MBA%20em%20Data%20Science%20e%20Analytics/Regressão%20Logística/cancer_mama.ipynb)
+##### Regressão Logística
+- [Cancer de Mama](Machine%20Learning/Regressão%20Logística/cancer_mama.ipynb)
 
 
-##### Múltiplos
+### Outros
  - [Iris dataset](Outros/iris_dataset.ipynb)
  - [Desafio Alura Ciência de Dados (Inadimplência em liberação de créditos)](https://github.com/PericlesSavio/Jupyter_Notebook/tree/main/Desafio%20Alura)
     - [Semana 1](Desafio%20Alura/semana_1.ipynb)
