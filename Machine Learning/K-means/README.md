@@ -12,7 +12,7 @@ Em geral, clustering usa técnicas iterativas para agrupar casos de um conjunto 
 5. Novos centroides são calculados.
 6. O processo é repetido (a partir do item 2) até não haver mais movimentações dos centroides.
 
-![Animação](centroides_animacao.gif "Animação")
+![Animação](arquivos/centroides_animacao.gif "Animação")
 
 ### Conceitos
 - Centroide: O centroide é um ponto representativo de cada cluster. O algoritmo K-means atribui cada ponto de dados de entrada a um dos clusters minimizando a soma de quadrados dentro do cluster.
