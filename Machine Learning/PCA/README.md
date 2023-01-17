@@ -58,7 +58,7 @@ from factor_analyzer import FactorAnalyzer
 
 - **Teste de Kaiser-Meyer-Olkin (KMO)**: é um critério para identificar se um modelo de análise fatorial que está sendo utilizado é adequadamente ajustado aos dados, testando a consistência geral dos dados. Este método verifica se a matriz de correlação inversa é próxima da matriz diagonal, consistindo em comparar os valores dos coeficientes de correlação linear observados com os valores dos coeficientes de correlação parcial.
 
-![](kmo.png)
+![](arquivos/kmo.png)
 
 
 
