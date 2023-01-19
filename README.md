@@ -4,6 +4,7 @@
 
 ### Estatística
 - [Variância e desvio padrão](Estatística/variancia_desvio_padrao.md)
+- [Qui-quadrado](Estatística/qui_quadrado.md)
 
 ### Machine Learning
 
