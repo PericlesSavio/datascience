@@ -1,4 +1,4 @@
-### Variância e Desvio Padrão
+# Variância e Desvio Padrão
 **Variância** é uma medida estatística que mostra o quão dispersos os valores de uma amostra estão em relação à sua média. Ela é calculada tomando a média dos quadrados das diferenças entre cada valor da amostra e a média da amostra. A **Variância** é sempre positiva ou zero, e quanto maior ela for, maior será a dispersão dos dados.
 
 O **Desvio Padrão** é a raiz quadrada da **Variância**. Ele fornece uma medida da variação dos dados em torno da média. Ele é uma medida de "espalhamento" dos dados.
@@ -7,10 +7,24 @@ O **Desvio Padrão** é a raiz quadrada da **Variância**. Ele fornece uma medid
 
 A **Variância** e o **Desvio Padrão** são ambos utilizados para medir a dispersão dos dados, mas eles são usados em contextos diferentes. A **Variância** é mais amplamente utilizada em análises estatísticas avançadas e em aplicações matemáticas, enquanto o **Desvio Padrão** é mais amplamente utilizado para fornecer uma medida intuitiva da variação dos dados.
 
+###Exemplo em Python
+```Python
+import numpy as np
 
-###### Referências
-- https://pt.wikipedia.org/wiki/Desvio_padr%C3%A3o
-- https://pt.wikipedia.org/wiki/Vari%C3%A2ncia
+# exemplo de dados
+data = [2, 5, 5, 7, 3]
+
+# calculando a variancia
+variancia = np.var(data)
+print("Variancia: ", variancia)
+
+# calculando o desvio padrão
+desvio_padrao = np.std(data)
+print("Desvio padrão: ", desvio_padrao)
+```
+
+
+### Referências
 - https://brasilescola.uol.com.br/matematica/medidas-dispersao-variancia-desvio-padrao.htm
 - https://www.mathsisfun.com/data/standard-deviation.html
 - https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-sample/v/population-variance-and-sample-variance

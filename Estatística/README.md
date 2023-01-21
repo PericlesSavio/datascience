@@ -3,4 +3,6 @@
 - Website: [periclessavio.github.io](https://periclessavio.github.io/)
 
 ### Conceitos básicos de estatística
-- [Variância e Desvio Padrão](variancia_desvio_padrao.md)
+- [Variância e desvio padrão](Estatística/variancia_desvio_padrao.md)
+- [Qui-quadrado](Estatística/qui_quadrado.md)
+- [Teste de hipótese](Estatística/teste_hipotese.md)
