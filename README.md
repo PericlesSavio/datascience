@@ -13,7 +13,7 @@
  - [Experiência vs Salário](Outros/experiencia_vs_salario.ipynb)
 
 
-##### Agrupamento Hierárquico
+##### [Agrupamento Hierárquico](Machine%20Learning/Agrupamento%20Hier%C3%A1rquico/README.md)
 - [Notas](Machine%20Learning/Agrupamento%20Hier%C3%A1rquico/notas_alunos.ipynb)
 - [Indicadores socioeconômicos das nações](Machine%20Learning/Agrupamento%20Hier%C3%A1rquico/indicadores_socioeconomicos_paises.ipynb)
 
