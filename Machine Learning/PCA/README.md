@@ -1,4 +1,4 @@
-## Análise de Componentes Principais (PCA ou Principal Component Analysis)
+# Análise de Componentes Principais (PCA ou Principal Component Analysis)
 
 A análise de componentes principais (PCA) é uma técnica para reduzir a dimensionalidade de tais conjuntos de dados, aumentando a interpretabilidade, mas ao mesmo tempo minimizando a perda de informações. Ela faz isso criando novas variáveis não correlacionadas que maximizam sucessivamente a variância. 
 
@@ -6,33 +6,42 @@ PCA lida lida com variáveis **métricas** que possuem, entre si, consideráveis
 
 ![](https://programmathically.com/wp-content/uploads/2021/08/xpca-2-dimensions-1024x644.png.pagespeed.ic.QjLsspTdxx.webp)
 
-#### Requisitos para usar PCA
+### Requisitos para usar PCA
 * Variáveis métricas
 * Variáveis com alto grau de correlação.
 
-#### Objetivo
+### Objetivo
 * Reduzir a dimensionalidade da base de dados
 * Evidenciar variáveis ortogonais entre si;
 * Validar constructos
 * Elaborar rankings sem a utilização da ponderação arbitrária.
 
 
-#### Algumas bibliotecas
+### Algumas bibliotecas
 
 ```python
-# teste de Bartlett
-from scipy.stats import bartlett 
-from factor_analyzer.factor_analyzer import calculate_bartlett_sphericity
+from sklearn.decomposition import PCA
+import pandas as pd
 
-# teste de Kaiser-Meyer-Olkin (KMO)
-from factor_analyzer.factor_analyzer import calculate_kmo
+# Dados de exemplo
+data = {'Atributo1': [1, 2, 3, 4, 5, 6],
+        'Atributo2': [1.5, 2.5, 3.5, 4.5, 5.5, 6.5],
+        'Atributo3': [2, 3, 4, 5, 6, 7],
+        'Atributo4': [2.5, 3.5, 4.5, 5.5, 6.5, 7.5]}
+df = pd.DataFrame(data)
 
-# obtendo os Eigenvalues (autovalores)
-from factor_analyzer import FactorAnalyzer
+# Criação do objeto PCA
+pca = PCA(n_components=2)
+
+# Aplicação da PCA nos dados
+pca.fit(df)
+
+# Componentes principais
+print(pca.components_)
 ```
 
 
-##### Etapas
+### Etapas
 * Teste da esfericidade de Bartlett
 * Teste de Kaiser-Meyer-Olkin
 * Matriz de correlação
@@ -62,7 +71,7 @@ from factor_analyzer import FactorAnalyzer
 
 
 
-#### Referências
+### Referências
 
 - https://royalsocietypublishing.org/doi/10.1098/rsta.2015.0202
 
