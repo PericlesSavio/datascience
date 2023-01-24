@@ -27,7 +27,7 @@
 - [Reconhecimento de dígitos](Machine%20Learning/PCA/digitos.ipynb)
 
 
-##### Regressão Logística
+##### [Regressão Logística](Machine%20Learning/Regressão%20Logística/README.md)
 - [Cancer de Mama](Machine%20Learning/Regressão%20Logística/cancer_mama.ipynb)
 
 

@@ -15,28 +15,26 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
-# Carrega os dados
-df = pd.read_csv("data.csv")
+# criando dataset hipotético
+dados = {'Anos_Fumando': [0, 20, 0, 25, 10, 35, 0, 45, 5],
+          'Cancer': [0, 1, 0, 1, 1, 1, 0, 1, 0]}
+df = pd.DataFrame(dados)
 
-# Divide os dados em atributos e rótulo
-X = df.drop("label", axis=1)
-y = df["label"]
-
-# Divide os dados em treino e teste
+# dividindo os dados em treino e teste
+X = df[['Anos_Fumando']]
+y = df['Cancer']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# Cria o modelo de regressão logística
-clf = LogisticRegression()
+# criando o modelo de regressão logística
+log_reg = LogisticRegression()
+log_reg.fit(X_train, y_train)
 
-# Treina o modelo com os dados de treino
-clf.fit(X_train, y_train)
+# fazendo previsões com os dados de teste
+y_pred = log_reg.predict(X_test)
 
-# Realiza as previsões com os dados de teste
-y_pred = clf.predict(X_test)
-
-# Avalia o desempenho do modelo
-score = clf.score(X_test, y_test)
-print("Acurácia: ", score)
+# avaliando o desempenho do modelo
+score = log_reg.score(X_test, y_test)
+print(score)
 ```
 
 ### Características
