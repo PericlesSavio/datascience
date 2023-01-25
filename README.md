@@ -3,9 +3,15 @@
 - Website: [periclessavio.github.io](https://periclessavio.github.io/)
 
 ### Estatística
+##### Concentis Básicos
 - [Variância e desvio padrão](Estatística/variancia_desvio_padrao.md)
 - [Qui-quadrado](Estatística/qui_quadrado.md)
 - [Teste de Hipótese](Estatística/teste_hipotese.md)
+
+##### [Análise de Correspondência](Estatística/Análise%20de%20Correspondência/Readme.MD)
+- [Análise de Correspondência](Estatística/Análise%20de%20Correspondência/paises.ipynb)
+
+
 
 ### Machine Learning
 

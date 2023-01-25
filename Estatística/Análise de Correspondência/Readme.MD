@@ -23,3 +23,4 @@ A análise de correspondência é frequentemente utilizada em conjunto com outra
 - https://www.kaggle.com/code/cmcoutosilva/an-lise-de-correspond-ncia-c-mara-dos-deputados/notebook
 - https://napsterinblue.github.io/notes/stats/techniques/mca/
 - https://acervolima.com/tabela-de-contingencia-em-python/
+- https://towardsdatascience.com/5-must-know-dimensionality-reduction-techniques-via-prince-e6ffb27e55d1
