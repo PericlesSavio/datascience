@@ -9,7 +9,7 @@
 - [Teste de Hipótese](Estatística/teste_hipotese.md)
 
 ##### [Análise de Correspondência](Estatística/Análise%20de%20Correspondência/Readme.MD)
-- [Análise de Correspondência](Estatística/Análise%20de%20Correspondência/paises.ipynb)
+- [Países (dados socioeconômicos)](Estatística/Análise%20de%20Correspondência/paises.ipynb)
 
 
 
