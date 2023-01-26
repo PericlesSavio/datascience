@@ -2,6 +2,11 @@
 - Linkedin: [linkedin.com/in/periclessavio](https://www.linkedin.com/in/periclessavio/)
 - Website: [periclessavio.github.io](https://periclessavio.github.io/)
 
+### Python
+- [Classes](Python/classes.ipynb)
+
+
+
 ### Estatística
 ##### Concentis Básicos
 - [Variância e desvio padrão](Estatística/variancia_desvio_padrao.md)
