@@ -4,6 +4,7 @@
 
 ### Python
 - [Classes](Python/classes.ipynb)
+- [Map](Python/map.ipynb)
 
 
 
