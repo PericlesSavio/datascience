@@ -9,7 +9,7 @@
 
 
 ### Estatística
-##### Concentis Básicos
+##### Concentos Básicos
 - [Variância e desvio padrão](Estatística/variancia_desvio_padrao.md)
 - [Qui-quadrado](Estatística/qui_quadrado.md)
 - [Teste de Hipótese](Estatística/teste_hipotese.md)
@@ -21,7 +21,7 @@
 
 ### Machine Learning
 
-##### Regressão Linear
+##### [Regressão Linear](Machine%20Learning/Regressão%20Linear/README.md)
  - [Experiência vs Salário](Outros/experiencia_vs_salario.ipynb)
 
 

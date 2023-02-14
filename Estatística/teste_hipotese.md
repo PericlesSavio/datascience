@@ -4,6 +4,8 @@ O **teste de hipótese** é um método estatístico utilizado para determinar se
 
 O nível de significância é usado para determinar se a diferença observada entre a amostra e a população é estatisticamente significativa ou se é apenas uma variação aleatória. O nível de significância é geralmente estabelecido em 5% ou 1%. Se o p-valor (probabilidade de obter os resultados observados ou mais extremos se a hipótese nula for verdadeira) for menor que o nível de significância, a hipótese nula é rejeitada e a hipótese alternativa é aceita.
 
+![](arquivos/teste_hipotese.png)
+
 ### Exemplo em Python
 ```Python
 from scipy import stats
