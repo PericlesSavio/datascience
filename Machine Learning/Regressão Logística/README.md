@@ -53,6 +53,31 @@ $$F1 = 2 * (precision * recall) / (precision + recall)$$
 
 onde "precision" é a proporção de resultados positivos verdadeiros em relação a todos os resultados positivos previstos, e "recall" é a proporção de resultados positivos verdadeiros em relação a todos os resultados verdadeiros. O valor do F1-Score varia entre 0 e 1, sendo que quanto maior o valor, melhor é o desempenho do modelo.
 
+##### AIC
+Akaike Information Criterion é um critério de seleção de modelo que visa balancear a qualidade de ajuste do modelo e sua complexidade. Ele é amplamente utilizado em análise estatística e em machine learning para avaliar modelos e escolher o melhor entre eles. O AIC é calculado a partir da função de verossimilhança do modelo, penalizando-o por sua complexidade e número de parâmetros. A escolha do modelo com menor valor de AIC é preferível, pois indica um melhor compromisso entre a capacidade de ajuste do modelo e sua simplicidade.
+
+$$AIC = 2k - 2ln(L)$$
+
+onde:
+* k é o número de parâmetros do modelo (incluindo o intercepto)
+* L é a função de verossimilhança do modelo
+
+##### BIC
+Bayesian Information Criterion é uma medida de qualidade de ajuste de modelos estatísticos. É uma versão do critério de informação de Akaike (AIC) que adiciona uma penalidade pelo número de parâmetros no modelo. O objetivo é escolher o modelo que melhor se ajusta aos dados, levando em conta a complexidade do modelo. Quanto menor o valor do BIC, melhor o modelo é considerado.
+
+$$BIC = -2log(L) + p * log(n)$$
+
+onde:
+* L é a função de verossimilhança do modelo
+* p é o número de parâmetros do modelo
+* n é o número de observações nos dados
+
+
+##### ROC
+Receiver Operating Characteristic é uma curva gráfica utilizada para avaliar a qualidade de modelos de classificação binária. Ela representa a relação entre a taxa de verdadeiros positivos (sensibilidade) e a taxa de falsos positivos (1 - especificidade) para diferentes pontos de corte utilizados para separar as classes. A curva ROC é gerada plotando esses valores em um gráfico, onde o eixo x é a taxa de falsos positivos e o eixo y é a taxa de verdadeiros positivos. A área sob a curva (AUC) é frequentemente utilizada como uma medida resumida da qualidade do modelo, onde valores mais próximos de 1 indicam um modelo com boa capacidade de separação entre as classes.
+
+![](arquivos/curva_roc.png)
+
 
 ### Exemplo em Python
 ```python

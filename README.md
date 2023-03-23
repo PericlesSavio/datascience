@@ -24,6 +24,9 @@
 ##### [Regressão Linear](Machine%20Learning/Regressão%20Linear/README.md)
  - [Experiência vs Salário](Outros/experiencia_vs_salario.ipynb)
 
+ ##### [Regressão Logística](Machine%20Learning/Regressão%20Logística/README.md)
+- [Cancer de Mama](Machine%20Learning/Regressão%20Logística/cancer_mama.ipynb)
+
 
 ##### [Agrupamento Hierárquico](Machine%20Learning/Agrupamento%20Hier%C3%A1rquico/README.md)
 - [Notas](Machine%20Learning/Agrupamento%20Hier%C3%A1rquico/notas_alunos.ipynb)
@@ -39,8 +42,7 @@
 - [Reconhecimento de dígitos](Machine%20Learning/PCA/digitos.ipynb)
 
 
-##### [Regressão Logística](Machine%20Learning/Regressão%20Logística/README.md)
-- [Cancer de Mama](Machine%20Learning/Regressão%20Logística/cancer_mama.ipynb)
+
 
 
 ### Outros
