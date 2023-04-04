@@ -124,3 +124,4 @@ print(score)
 - https://www.youtube.com/watch?v=yIYKR4sgzI8
 - https://smolski.github.io/livroavancado/reglog.html
 - https://www.rpubs.com/dudubiologico/545528
+- https://monografias.ufma.br/jspui/bitstream/123456789/3572/1/LEANDRO-GONZALEZ.pdf
