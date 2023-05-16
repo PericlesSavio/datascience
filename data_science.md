@@ -12,7 +12,7 @@
 - Teste T de Student
 - Teste de Hipótese
 - Nível de significância e nivel de confiança
-- Teorema Central do Limite
+- Teorema central do limite
 
 ##### Conceitos mais avançados
 - R² e R² ajustado
@@ -59,7 +59,9 @@
 - [Keras](https://keras.io/): aprendizado de máquina.
 - [PyTorch](https://pytorch.org/): aprendizado de máquina. 
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/): extrair dados de HTML e XML (scrapping).
-- [Streamlit]():
+- [Streamlit](https://streamlit.io/): dashboard.
+- [Shiny](https://shiny.rstudio.com/py/): dashboard.
+- [Dash](https://dash.plotly.com/): dashboard.
 
 ##### R
 - [dplyr](https://dplyr.tidyverse.org/index.html): mnipulação de dataframes.
@@ -73,3 +75,27 @@
 - [forecast](https://pkg.robjhyndman.com/forecast/index.html): modelagem e previsão de séries temporais.
 - [tensorflow](https://tensorflow.rstudio.com/): aprendizado de máquina e redes neurais.
 - [rvest](https://rvest.tidyverse.org/): web scraping.
+- [shiny](https://shiny.posit.co/r/getstarted/): dashboard.
+- [flexdashboard](https://pkgs.rstudio.com/flexdashboard/): dashboard.
+- [dash](https://dash.plotly.com/r): dashboard.
+
+### Para ciência de dados: Python ou R?
+##### Python
+- Sintaxe limpa e legível, o que facilita a escrita e compreensão do código.
+- Muito popular.
+- Excelente integração com outras áreas da programação, como desenvolvimento web e automação de tarefas.
+- Boa performance em termos de velocidade de execução de código.
+
+##### R:
+- Manipulação de dataframes é mais intuitiva
+- Melhor visualização de dados.
+- Em geral, os pacotes relacionados a análises estatísticas apresentam mais parâmetros.
+- Melhor integração para publicações científicas.
+- A IDE (R Studio) permite rodar linhas específicas e apresenta uma melhor visualização de dados.
+
+##### Referências
+- https://www.cienciaedados.com/r-ou-python-para-analise-de-dados/
+- https://medium.com/@datadrivenscience/python-vs-r-for-data-science-and-the-winner-is-3ebb1a968197#:~:text=Learning%20Python%20will%20help%20you,in%20the%20data%20science%20community
+- https://www.ibm.com/cloud/blog/python-vs-r
+- https://www.coursera.org/articles/python-or-r-for-data-analysis
+- https://www.w3schools.blog/r-advantages-and-disadvantages
