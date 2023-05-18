@@ -2,6 +2,10 @@
 - Linkedin: [linkedin.com/in/periclessavio](https://www.linkedin.com/in/periclessavio/)
 - Website: [periclessavio.github.io](https://periclessavio.github.io/)
 
+
+### Ciência de dados
+- [Roteiro Básico](data_science.md)
+
 ### Python
 - [Classes](Python/classes.ipynb)
 - [Map](Python/map.ipynb)
