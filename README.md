@@ -26,7 +26,8 @@
 ### Machine Learning
 
 ##### [Regressão Linear](Machine%20Learning/Regressão%20Linear/README.md)
- - [Experiência vs Salário](Outros/experiencia_vs_salario.ipynb)
+ - [Experiência vs Salário](Machine%20Learning/Regressão%20Linear/experiencia_vs_salario.ipynb)
+ - [Plano de Saúde](Machine%20Learning/Regressão%20Linear/medical_insurance.ipynb)
 
  ##### [Regressão Logística](Machine%20Learning/Regressão%20Logística/README.md)
 - [Cancer de Mama](Machine%20Learning/Regressão%20Logística/cancer_mama.ipynb)
