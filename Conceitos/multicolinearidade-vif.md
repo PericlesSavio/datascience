@@ -21,3 +21,4 @@ Onde varia de 1 até ∞, sendo que quanto mais baixo o VIF, menor a multicoline
 - https://www.statisticshowto.com/variance-inflation-factor/
 - https://sparkbyexamples.com/machine-learning/variance-inflation-factor-vif/
 - https://psicometriaonline.com.br/o-que-e-multicolinearidade/
+- https://statisticsbyjim.com/regression/multicollinearity-in-regression-analysis/
