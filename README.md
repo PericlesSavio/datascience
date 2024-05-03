@@ -47,11 +47,10 @@
 - [Reconhecimento de dígitos](Machine%20Learning/PCA/digitos.ipynb)
 
 
-
-
-
 ### Outros
  - [Iris dataset](Outros/iris_dataset.ipynb)
- - [Desafio Alura Ciência de Dados (Inadimplência em liberação de créditos)](https://github.com/PericlesSavio/Jupyter_Notebook/tree/main/Desafio%20Alura)
+ - [Desafio Alura Ciência de Dados (Inadimplência em liberação de créditos)](Desafio%20Alura/README.md)
     - [Semana 1](Desafio%20Alura/semana_1.ipynb)
     - [Semana 2](Desafio%20Alura/semana_2.ipynb)
+- [Dashboard PowerBI - F1](Outros/F1/Readme.md)
+   
